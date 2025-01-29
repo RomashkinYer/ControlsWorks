@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
+        System.out.println("Дана ограниченная область и точка A(\uD835\uDC650, \uD835\uDC660). Написать программу, которая\n" +
+                "проверяет, попадает ли точка с координатами пользователя в заданную область.");
         Scanner scanner = new Scanner(System.in);
 
         // Ввод координат области (прямоугольник)
