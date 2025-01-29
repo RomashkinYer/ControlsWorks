@@ -4,29 +4,29 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
-        System.out.println("Высота равнобедренного треугольника равна h. Основание больше боковой стороны на x. Найти основание этого треугольника." +
-                " P.S. В условии была дана сторона треугольника A, поэтому я также сделал проверку полученного основания через формулу ");
+        System.out.println("Высота равнобедренного треугольника равна h. Основание больше боковой стороны на x. Найти основание этого треугольника.\n");
 
         Scanner scanner = new Scanner(System.in);
 
-        //Ввод данных
-        System.out.print("Введите высоту h: ");
+        // Запрашиваем высоту треугольника
+        System.out.print("Введите высоту равнобедренного треугольника (h): ");
         double h = scanner.nextDouble();
 
-        System.out.print("Введите разницу между основанием и боковой стороной: ");
+        // Запрашиваем прирост основания по сравнению с боковой стороной
+        System.out.print("Введите прирост основания по сравнению с боковой стороной (x): ");
         double x = scanner.nextDouble();
 
-        System.out.print("Введите сторону a: ");
-        double a = scanner.nextDouble();
+        // Вычисляем основание
+        double base = calculateBase(h, x);
+        System.out.printf("Длина основания равнобедренного треугольника: %.2f%n", base);
 
-        //Расчет
-        double b = a + x;//Находим основание
-
-        // Проверяем теорему Пифагора
-        double halfBase = b / 2;
-        boolean isValid = (h * h + halfBase * halfBase == a * a);
-
-
+        // Закрываем сканер
         scanner.close();
+    }
+
+    public static double calculateBase(double h, double x) {
+        double a = (2 * x + Math.sqrt(4 * x * x + 12 * h * h)) / 6; // Боковая сторона
+        double base = a + x; // Основание
+        return base;
     }
 }
