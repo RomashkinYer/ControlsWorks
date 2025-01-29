@@ -29,12 +29,14 @@ public class DetailReport {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        System.out.println("Составить программу, в которой будет реализована работа с таблицей. - Так как ТЗ неполное, реализовал консольное приложение и CRUD записей с ней");
+
         while (true) {
             System.out.println("\nВыберите действие:");
-            System.out.println("1. Добавить деталь");
-            System.out.println("2. Просмотреть детали");
-            System.out.println("3. Обновить деталь");
-            System.out.println("4. Удалить деталь");
+            System.out.println("1. Добавить запись");
+            System.out.println("2. Посмотреть записи");
+            System.out.println("3. Обновить запись");
+            System.out.println("4. Удалить запись");
             System.out.println("5. Выход");
             int choice = scanner.nextInt();
             scanner.nextLine(); // очистка буфера
