@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
+        System.out.println("Вычислить значения функции F на интервале от начального значения x=Xнач до конечного значения x=Xкон с шагом dX, Xнач, Xкон, dX, a, b и c задаются пользователем и являются действительными числами");
+
         Scanner scanner = new Scanner(System.in);
 
         // Ввод начального значения, конечного значения и шага

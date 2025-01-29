@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
+        System.out.println("Найти наибольшую степень двойки, на которую делится заданное число");
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите натуральное число: ");
         int number = scanner.nextInt();

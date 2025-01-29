@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
+        System.out.println("Вычислить для заданного n указанное выражение. √3 + √6 + ⋯ + √3");
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите натуральное число n: ");
         int n = scanner.nextInt();

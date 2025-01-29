@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
+        System.out.println("Вычислить с точностью до заданного 0 < \uF065 < 1:");
+
         Scanner scanner = new Scanner(System.in);
 
         // Ввод значения x
@@ -16,8 +18,15 @@ public class Task5 {
             return;
         }
 
-        // Установка значения epsilon
-        double epsilon = 0.0001; // Задайте нужное значение epsilon здесь
+        // Ввод точности epsilon
+        System.out.print("Введите значение ε (0 < ε < 1): ");
+        double epsilon = scanner.nextDouble();
+
+        // Проверка диапазона для epsilon
+        if (epsilon <= 0 || epsilon >= 1) {
+            System.out.println("Ошибка: ε должно быть в диапазоне (0, 1).");
+            return;
+        }
 
         double sum = 0.0; // Сумма ряда
         double term; // Текущий член ряда
