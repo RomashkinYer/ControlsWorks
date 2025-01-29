@@ -62,6 +62,7 @@ public class DetailReport {
         }
     }
 
+    //Метод для ввода данных
     private static void createDetail() {
         System.out.print("Введите наименование: ");
         String name = scanner.nextLine();
@@ -77,6 +78,7 @@ public class DetailReport {
         System.out.println("Деталь добавлена.");
     }
 
+    //Метод формирования таблицы
     private static void readDetails() {
         System.out.printf("%-15s %-10s %-10s %-20s%n", "Наименование", "Тип", "Количество", "Вес 1 детали (г)");
         System.out.println("-------------------------------------------------------------");
@@ -86,6 +88,7 @@ public class DetailReport {
         System.out.println("\nПримечание: О – оригинальная, П – покупная, З - заимствованная");
     }
 
+    //Метод менюшки управления таблицы
     private static void updateDetail() {
         System.out.print("Введите номер детали для обновления (0 - " + (details.size() - 1) + "): ");
         int index = scanner.nextInt();
@@ -113,6 +116,7 @@ public class DetailReport {
         }
     }
 
+    //Метод для удаления записей из таблицы
     private static void deleteDetail() {
         System.out.print("Введите номер детали для удаления (0 - " + (details.size() - 1) + "): ");
         int index = scanner.nextInt();
