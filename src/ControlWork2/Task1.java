@@ -17,7 +17,7 @@ public class Task1 {
 
         // Проверка на превышение лимита
         if (requestedCans > MAX_CANS) {
-            System.out.println("Предупреждение: Вы не можете заказать больше " + MAX_CANS + " банок пива.");
+            System.out.println("Упс \t(╯︵╰,) : Вы не можете заказать больше " + MAX_CANS + " банок пива(");
         } else {
             double totalCost = requestedCans * CAN_PRICE;
             System.out.println("Вы заказали " + requestedCans + " банок пива. Общая стоимость: $" + totalCost);
